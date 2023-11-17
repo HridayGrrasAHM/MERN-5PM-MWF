@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            height: 100%;
+            width: 0px;
+            list-style: none;
+            border-radius: 20px;
+            /* transition-property: all;
+            transition-duration: 4s; */
+            
+        }
+        @keyframes loading {
+            /* from {
+                width: 0px;
+            } to {
+                width: 100%;
+            } */
+           0% {
+            width: 0px;
+            background-color: #240b36;
+           } 50% {
+            width: 100%;
+            background-color: #a4031f;
+           } 100% {
+            width: 0px;
+            background-color: #240b36;
+           }
+        }
+        /* li:nth-child(1) {
+            background-color: #f2dc5d;
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        li:nth-child(2) {
+            background-color: #f2a359;
+            animation-name: loading;
+            animation-duration: 3.5s;
+            animation-delay: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        li:nth-child(3) {
+            background-color: #db9065;
+            animation-name: loading;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        li:nth-child(4) {
+            background-color: #a4031f;
+            animation-name: loading;
+            animation-duration: 2.5s;
+            animation-delay: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        li:nth-child(5) {
+            background-color: #240b36;
+            animation-name: loading;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        } */
+        li:nth-child(even) {
+            background-color: #240b36;
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        li:nth-child(odd) {
+            background-color: #a4031f;
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+    </ul>
+</body>
+</html>

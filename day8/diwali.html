@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        div#container {
+            height: 350px;
+            width: 100%;
+            /* border: 1px solid red; */
+            overflow: auto;
+            /* overflow-y: hidden; */
+            margin-left: 50px;
+        }
+        div.lights {
+            float: left;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 100%;
+        }
+        div.lights2 {
+            background-color: red;
+            box-shadow: 0px 0px 30px red;
+            animation: light2 2s ease-in-out  infinite;
+        }
+        @keyframes light2 {
+            0% {
+                transform: scale(1);
+            } 50% {
+                transform: scale(0);
+            } 100% {
+                transform: scale(1);
+            }
+        }
+        div.lights1 {
+            background-color: blue;
+            box-shadow: 0px 0px 30px blue;
+            animation: light1 2s ease-in-out  infinite;
+        }
+        @keyframes light1 {
+            0% {
+                transform: scale(0);
+            } 50% {
+                transform: scale(1);
+            } 100% {
+                transform: scale(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="lights lights2"></div>
+        <div class="lights lights1"></div>
+        <div class="lights lights2"></div>
+        <div class="lights lights1"></div>
+        <div class="lights lights2"></div>
+        <div class="lights lights1"></div>
+        <div class="lights lights2"></div>
+    </div>
+</body>
+</html>

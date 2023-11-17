@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic</title>
+    <style>
+        /* div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 100%;
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out; */
+        /* animation-name: disapper;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+        /* }
+        @keyframes disapper {
+            0% {
+                transform: scale(1);
+            } 50% {
+                transform: scale(0);
+            } 100% {
+                transform: scale(1);
+            }
+        } */
+        /* div:hover {
+            transform: scale(0);
+        } */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        div#container {
+            height: 100%;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        div#red,
+        div#green {
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+        }
+
+        div#red {
+            background-color: red;
+            box-shadow: 0px 0px 30px red;
+            animation: redSignal 2s ease-in-out 1;
+            animation-delay: 3s;
+            transform: scale(0);
+        }
+        @keyframes redSignal {
+            0% {
+                transform: scale(1);
+            } 100% {
+                transform: scale(0);
+            } 
+            /* 100% {
+                transform: scale(1);
+            } */
+        }
+        div#green {
+            background-color: green;
+            box-shadow: 0px 0px 30px green;
+            animation: greenSignal 2s ease-in-out 1;
+            transform: scale(1);
+            animation-delay: 3s;
+        }
+        @keyframes greenSignal {
+            0% {
+                transform: scale(0);
+            } 100% {
+                transform: scale(1);
+            } 
+            /* 100% {
+                transform: scale(0);
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="red"></div>
+        <div id="green"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical NavBar</title>
+    <style>
+        /* * {
+            border: 1px solid white;
+        } */
+        body {
+            background-color: black;
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        li {
+            list-style-type: none;
+            margin-left: -15px;
+            padding: 5px 0px;
+            /* margin-top: ; */
+        }
+
+        ul {
+            /* width: 0px; */
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        #navbar {
+            height: 130px;
+            width: 100px;
+            position: fixed;
+            margin-left: 0px;
+            /* border: 1px solid white; */
+        }
+
+        #content {
+            height: 100%;
+            width: 500px;
+            border: 1px solid gray;
+            padding: 20px;
+            margin-left: 120px;
+        }
+
+        .header {
+            float: left;
+        }
+
+        #container {
+            height: 100%;
+            width: 661px;
+            border: 1px solid white;
+            overflow: hidden;
+        }
+
+        .empty {
+            height: 10px;
+            width: 100%;
+        }
+
+        #footer {
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid white; */
+            /* margin-top: 1313px; */
+            /* overflow: auto; */
+        }
+
+        address {
+            height: 100%;
+            width: 180px;
+            /* border: 1px solid white; */
+            margin-left: 20px;
+            margin-top: -16px;
+        }
+        #inp_newsletter {
+            float: right;
+            margin-top: -70px;
+            margin-right: 40px;
+            /* padding-left: 10px; */
+            width: 100px;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+        }
+        #back {
+            margin-top: 0px;
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid white; */
+            text-align: center;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        #back:hover {
+            background-color: white;
+            color: grey;
+        }
+        hr {
+            border: 1px solid #e7d8c9;
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>News</h1></center>
+    <div id="container">
+        <div class="header" id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <!-- <li><a href="#footer">Footer</a></li> -->
+            </ul>
+        </div>
+        <div class="header" id="content">
+            <div id="home">
+                <div class="empty"></div>
+                <h1>Home</h1>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fuga libero consequatur nihil
+                    incidunt perferendis laudantium atque accusamus vel! Ipsum minima ea a maiores officia error,
+                    dolorem obcaecati quisquam. Est natus sit, animi molestiae accusamus autem voluptate fuga. Facere
+                    illum molestiae expedita, ad voluptatibus dolorum ea cupiditate fugiat itaque libero totam, maiores
+                    numquam minima porro adipisci nobis eveniet facilis vero temporibus modi. Praesentium possimus
+                    ducimus minus illo asperiores sequi cupiditate voluptatum dolorum! Error ducimus corporis commodi,
+                    nesciunt ea hic nisi quisquam omnis. Repudiandae nam laboriosam laudantium numquam quo officiis
+                    deserunt iure nesciunt velit mollitia perspiciatis in, cupiditate dicta esse excepturi?</p>
+            </div>
+
+            <div id="about">
+                <div class="empty"></div>
+                <h1>About Us</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste culpa maiores non illum delectus
+                    accusamus ipsam doloribus quis, dolore corrupti enim sint sapiente aliquid sed architecto officia
+                    impedit dolores alias quibusdam quasi adipisci! Non aliquid deserunt maiores dignissimos labore
+                    voluptatem sequi corrupti molestiae consequatur et dolore dolores laboriosam eius similique soluta
+                    ipsa ipsam, dolorem doloribus accusantium dolor placeat dicta ab explicabo ad. Fuga quibusdam nam
+                    dicta. Corrupti animi at quae minima. Illo, ratione quidem quas, quam exercitationem praesentium
+                    quis voluptates tempore quos ex, ipsum alias. Animi, voluptates dicta excepturi quaerat aut neque
+                    ipsam hic doloribus aliquam incidunt, error delectus eos.</p>
+            </div>
+            <div id="contact">
+                <div class="empty"></div>
+                <h1>Contact Us</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos doloribus, nemo ratione aperiam eos
+                    magnam aut debitis eum deleniti praesentium necessitatibus ex amet et blanditiis asperiores nulla
+                    incidunt culpa voluptate quisquam ipsam eius distinctio voluptatibus officiis sint. Eaque adipisci
+                    dicta commodi id sapiente! Fugit voluptas repudiandae beatae, ad voluptatum blanditiis
+                    necessitatibus excepturi sapiente omnis officiis quos natus non perferendis sequi, et dicta quod eum
+                    iure incidunt, quas iste ipsa quibusdam? Est ullam deserunt laboriosam. Doloribus eligendi commodi
+                    pariatur adipisci exercitationem, accusamus odio nihil reiciendis maiores aliquam, accusantium ipsa
+                    laborum quasi magni eaque debitis ea quidem. Velit laboriosam et error iure?</p>
+            </div>
+            <div id="faq">
+                <div class="empty"></div>
+                <h1>FAQ</h1>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis praesentium inventore?
+                    Sit delectus accusantium totam quo! Cum corrupti quod sequi enim perspiciatis beatae culpa! Quisquam
+                    quos dolores vel consequuntur perferendis temporibus suscipit exercitationem numquam amet quae. Modi
+                    laudantium eum harum repellendus accusamus, dignissimos quis ipsam quos qui hic illum mollitia odit
+                    illo amet. A, eum voluptatum nihil quos autem dignissimos ipsam facere eaque recusandae impedit
+                    beatae sit aperiam ab dicta. Voluptate porro voluptatibus corrupti quos sint eligendi, veniam hic ab
+                    aspernatur optio enim dolor molestias asperiores eos error quasi, id nobis fugiat quidem incidunt
+                    nulla magni! Atque, reprehenderit numquam.</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div id="back">
+            <a id="backToTop" href="#">Back to top</a>
+        </div>
+        <dl>
+            <dt><h3>Address</h3></dt>
+            <dd>
+                <address>
+                    GRRAS Sol<sup>n</sup> Pvt. Ltd. <br>
+                    Swastik Cross Road <br>
+                    Ahmedabad-6
+                </address>
+            </dd>
+        </dl>
+        <div id="newsletter">
+            <input type="text" name="" id="inp_newsletter" placeholder="Newsletter">
+        </div>
+    </div>
+</body>
+
+</html>

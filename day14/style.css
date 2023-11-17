@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+div#container {
+    height: 98vh;
+    width: 100%;
+    /* background-color: skyblue; */
+    background-image: linear-gradient(to right, skyblue, skyblue, white);
+    /* background-image: linear-gradient(to top, skyblue, skyblue, white); */
+}
+
+div#ball {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 100%;
+    /* border: 2.5px solid red; */
+    border-top: 2.5px solid red;
+    border-bottom: 2.5px solid white;
+    transform: rotate(50deg);
+    background-color: transparent;
+    box-shadow: 10px 0px 50px red;
+    animation: bouncing 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bouncing {
+    0% {
+        margin-top: 0vh;
+        margin-left: 0%;
+        /* border: 2.5px solid red; */
+        border-top: 2.5px solid red;
+        border-left: 2.5px solid red;
+        border-right: 2.5px solid white;
+        border-bottom: 2.5px solid white;
+        box-shadow: 0px 0px 50px red;
+    }
+
+    20% {
+        margin-top: 83vh;
+        margin-left: 20%;
+        /* border: 2.5px solid red; */
+                        border-top: 2.5px solid red;
+                            border-left: 2.5px solid red;
+                            border-right: 2.5px solid white;
+                            border-bottom: 2.5px solid white;
+        box-shadow: 0px 0px 50px red;
+    }
+
+    40% {
+        margin-top: 42vh;
+        margin-left: 40%;
+        /* border: 2.5px solid red; */
+                        border-top: 2.5px solid red;
+                            border-left: 2.5px solid red;
+                            border-right: 2.5px solid white;
+                            border-bottom: 2.5px solid white;
+        box-shadow: 0px 0px 50px red;
+    }
+
+    60% {
+        margin-top: 83vh;
+        margin-left: 60%;
+        /* border: 2.5px solid red; */
+                        border-top: 2.5px solid red;
+                            border-left: 2.5px solid red;
+                            border-right: 2.5px solid white;
+                            border-bottom: 2.5px solid white;
+        box-shadow: 0px 0px 50px red;
+    }
+
+    80% {
+        margin-top: 62vh;
+        margin-left: 80%;
+        /* background-color: black; */
+        /* border: 2.5px solid black; */
+                border-top: 2.5px solid black;
+                    border-left: 2.5px solid black;
+                    border-right: 2.5px solid gray;
+                    border-bottom: 2.5px solid gray;
+        box-shadow: 0px 0px 50px black;
+    }
+
+    100% {
+        margin-top: 83vh;
+        margin-left: 93%;
+        /* border: 2.5px solid black; */
+                border-top: 2.5px solid black;
+                    border-left: 2.5px solid black;
+                    border-right: 2.5px solid gray;
+                    border-bottom: 2.5px solid gray;
+        box-shadow: 0px 0px 50px black;
+    }
+}
+
+h1 {
+    position: fixed;
+    transform: translate(400px, 67px);
+    font-family: "Poppins";
+    font-size: 45px;
+    /* text-shadow: 0px 0px 20px red; */
+}
+
+span#first, span#second, span#third {
+    opacity: 0;
+}
+
+span#first {
+    animation: reveal 1s ease-in-out 0s 1 ;
+    animation-fill-mode: forwards;
+}
+
+span#second {
+    animation: reveal 1s ease-in-out 2.5s 1;
+    animation-fill-mode: forwards;
+}
+
+span#third {
+    animation: reveal 1s ease-in-out 4.5s 1;
+    animation-fill-mode: forwards;
+    /* color: red; */
+    /* font-family: "Fira Code"; */
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
